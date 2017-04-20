@@ -1,31 +1,22 @@
-var bookWishlistApp = angular.module('bookWishlistApp', [
-    'ngRoute',
-    'bookWishlistAppControllers'
+var bookApp = angular.module('bookApp', [
+    'ngRoute', 'bookAppControllers'
 ]);
 
-bookWishlistApp.config(function (localStorageServiceProvider) {
-    localStorageServiceProvider
-        .setPrefix('bookWishlistApp')
-        .setStorageType('localStorage');
-});
-
-bookWishlistApp.config(['$routeProvider', function ($routeProvider) {
-
+bookApp.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         .when('/login', {
-            templateUrl: 'partials/login.html',
-            controller: 'LoginController'
+            templateUrl: 'templates/login.html',
+            controller: 'loginCtrl'
         })
-        .when('/signup', {
-            templateUrl: 'partials/signup.html',
-            controller: 'SignupController'
+        .when('/register', {
+            templateUrl: 'templates/register.html',
+            controller: 'registerCtrl'
         })
         .when('/', {
-            templateUrl: 'partials/index.html',
-            controller: 'MainController'
+            templateUrl: 'templates/index.html',
+            controller: 'mainCtrl'
         })
         .otherwise({
             redirectTo: '/'
         });
-
 }]);

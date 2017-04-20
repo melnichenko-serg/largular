@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Book Wishlist Application</title>
+    <title>Book Application</title>
 
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -17,8 +17,13 @@
     <script src="bower_components/jquery/dist/jquery.min.js" defer></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" defer></script>
     <script src="app/app.js" defer></script>
-    <script src="app/controllers.js" defer></script>
-    <script src="app/services.js" defer></script>
+    <script src="app/controllers/loginCtrl.js" defer></script>
+    <script src="app/controllers/mainCtrl.js" defer></script>
+    <script src="app/controllers/registerCtrl.js" defer></script>
+    <script src="app/modules/bookAppControllers.js" defer></script>
+    <script src="app/modules/bookAppServices.js" defer></script>
+    <script src="app/services/bookService.js" defer></script>
+    <script src="app/services/userService.js" defer></script>
 
     <style>
 
@@ -33,7 +38,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Book Wishlist Application</h1>
+            <h1>Book Application</h1>
         </div>
     </div>
     <div ng-view></div>
