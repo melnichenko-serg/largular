@@ -2,7 +2,8 @@
  * Created by MacBookPro on 4/20/17.
  */
 
-bookAppControllers.controller('loginCtrl', ['$scope', '$location', 'userService', function ($scope, $location, userService) {
+angular.module('bookAppControllers', ['bookAppServices'])
+    .controller('loginCtrl', ['$scope', '$location', 'userService', function ($scope, $location, userService) {
 
     $scope.login = function() {
         userService.login(

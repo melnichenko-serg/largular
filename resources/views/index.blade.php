@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="bookWishlistApp">
+<html lang="en" ng-app="bookApp">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,8 +20,6 @@
     <script src="app/controllers/loginCtrl.js" defer></script>
     <script src="app/controllers/mainCtrl.js" defer></script>
     <script src="app/controllers/registerCtrl.js" defer></script>
-    <script src="app/modules/bookAppControllers.js" defer></script>
-    <script src="app/modules/bookAppServices.js" defer></script>
     <script src="app/services/bookService.js" defer></script>
     <script src="app/services/userService.js" defer></script>
 
